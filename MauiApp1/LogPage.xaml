@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.LogPage"
+             Title="LogPage">
+
+    <ScrollView>
+        <Grid RowSpacing="10" Padding="20">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Title -->
+            <Label Style="{StaticResource TitleHeadline}"
+                   Grid.Row="0"
+                   Text="Detection&#10;History" />
+
+            <!-- 로그 목록 (CollectionView) -->
+            <CollectionView Grid.Row="1"
+                            x:Name="LogListView"
+                            ItemsSource="{Binding LogItems}"
+                            Margin="0,10,0,0"
+                            SelectionMode="None"
+                            BackgroundColor="#f9f9f9">
+
+                <CollectionView.Header>
+                    <!-- 헤더 -->
+                    <Grid ColumnDefinitions="*,*,*,*"
+                          Padding="5"
+                          BackgroundColor="#f0f0f0"
+                          ColumnSpacing="5">
+                        <Label Text="날짜" Grid.Column="0" Style="{StaticResource LogHeaderStyle}" />
+                        <Label Text="시간" Grid.Column="1" Style="{StaticResource LogHeaderStyle}" />
+                        <Label Text="객체명" Grid.Column="2" Style="{StaticResource LogHeaderStyle}" />
+                        <Label Text="설치위치" Grid.Column="3" Style="{StaticResource LogHeaderStyle}" />
+                    </Grid>
+                </CollectionView.Header>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="*,*,*,*"
+                              Padding="5"
+                              ColumnSpacing="4">
+                            <Label Text="{Binding DetDate}" Grid.Column="0" Style="{StaticResource LogStyle}" />
+                            <Label Text="{Binding DetTime}" Grid.Column="1" Style="{StaticResource LogStyle}" />
+                            <Label Text="{Binding DetAnimal}" Grid.Column="2" Style="{StaticResource LogStyle}" />
+                            <Label Text="{Binding DetLocation}" Grid.Column="3" Style="{StaticResource LogStyle}" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+            <StackLayout Grid.Row="2"
+                         Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Spacing="10" >
+
+                <Button x:Name="BtnL"
+                Text="◀"
+                TextColor="Black"
+                FontSize="20"
+                WidthRequest="50"
+                HeightRequest="50"
+                BackgroundColor="#eee"/>
+
+                <Button x:Name="BtnR"
+                Text="▶"
+                TextColor="Black"
+                FontSize="20"
+                WidthRequest="50"
+                HeightRequest="50"
+                BackgroundColor="#eee"/>
+
+            </StackLayout>
+
+
+            <!-- ToggleMenu Button -->
+            <Grid x:Name="OverlayMenu"
+                  Style="{StaticResource OverlayMenu}"
+                  RowDefinitions="Auto"
+                  ColumnDefinitions="Auto,Auto">
+
+                <Button x:Name="ToggleMenuBtn"
+                        Style="{StaticResource ToggleMenuBtn}"
+                        Grid.Column="0"
+                        Text="☰"
+                        Clicked="ToggleMenuBtn_Clicked" />
+
+                <StackLayout x:Name="MenuPanel"
+                             Style="{StaticResource MenuPanel}"
+                             Grid.Column="1">
+
+                    <Button Style="{StaticResource MenuBtn}" Text="실시간" Clicked="GoToPage_Clicked" />
+                    <Button Style="{StaticResource MenuBtn}" Text="기록확인" Clicked="GoToPage1_Clicked" />
+                    <Button Style="{StaticResource MenuBtn}" Text="현황분석" Clicked="GoToPage2_Clicked" />
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
