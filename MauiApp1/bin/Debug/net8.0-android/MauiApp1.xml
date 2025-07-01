@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MauiApp1</name>
+    </assembly>
+    <members>
+        <member name="M:MauiApp1.GraphPage.Navi(Microsoft.Maui.Controls.Page)">
+            <summary>
+            1. 메뉴 선택시 자기자신을 선택하면 알림팝업 생성
+            2. 타메뉴 선택시 이동
+            </summary>
+        </member>
+        <member name="M:MauiApp1.LogPage.Navi(Microsoft.Maui.Controls.Page)">
+            <summary>
+            1. 메뉴 선택시 자기자신을 선택하면 알림팝업 생성
+            2. 타메뉴 선택시 이동
+            </summary>
+        </member>
+        <member name="M:MauiApp1.MonitoringPage.Navi(Microsoft.Maui.Controls.Page)">
+            <summary>
+            1. 메뉴 선택시 자기자신을 선택하면 알림팝업 생성
+            2. 타메뉴 선택시 이동
+            </summary>
+        </member>
+    </members>
+</doc>
