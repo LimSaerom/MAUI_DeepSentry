@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage"
+             BackgroundColor="#F9F9F9">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,20" Spacing="25">
+
+            <Label
+                Text="LOGIN"
+                LineBreakMode="NoWrap"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Image
+                Source="icon.png"
+                HeightRequest="260"
+                Aspect="AspectFit"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to Deep-Sentry&#10;Monitoring App"
+                FontSize="20"
+                TextColor="#333333"
+                HorizontalTextAlignment="Center" />
+
+            <!-- ID 입력 및 체크박스 그룹 -->
+            <VerticalStackLayout Spacing="8">
+                <Entry
+                    x:Name="InputEntry"
+                    Placeholder="아이디를 입력하세요"
+                    FontSize="18"
+                    BackgroundColor="#EEEEEE"
+                    TextColor="#333333"
+                    PlaceholderColor="#888"
+                    HeightRequest="50" />
+
+                <HorizontalStackLayout Spacing="10" Padding="5,0,0,0" VerticalOptions="Center">
+                    <CheckBox
+                        x:Name="IdCheckbox"
+                        Color="#004E92" />
+                    <Label
+                        FontSize="16"
+                        Text="아이디 저장"
+                        TextColor="#555555"
+                        VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            <!-- 로그인 버튼 -->
+            <Button
+                x:Name="LoginBtn"
+                Text="로그인"
+                FontSize="20"
+                TextColor="White"
+                BackgroundColor="#004E92"
+                CornerRadius="25"
+                HeightRequest="60"
+                WidthRequest="200"
+                HorizontalOptions="Center"
+                Clicked="NextClicked" />
+
+            <!-- Firebase 로그 -->
+            <Frame
+                BackgroundColor="#E0E0E0"
+                CornerRadius="10"
+                Padding="15"
+                HasShadow="False"
+                Margin="0,5,0,0">
+                <VerticalStackLayout Spacing="3">
+                    <Label Text="Firebase 로그"  FontSize="14" TextColor="#666666" />
+                    <Label x:Name="LogLabel" Text="로그가 여기에 표시됩니다." FontSize="12" TextColor="#444444" />
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

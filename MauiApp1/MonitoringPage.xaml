@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:charts="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="MauiApp1.MonitoringPage"
+             BackgroundColor="#F9F9F9"
+             Title="MonitoringPage">
+
+    <ScrollView>
+        <Grid Padding="20" RowSpacing="25">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- 왼쪽 상단 토글 메뉴 버튼 및 메뉴 -->
+            <Grid x:Name="OverlayMenu"
+                  Style="{StaticResource OverlayMenu}"
+                  RowDefinitions="Auto"
+                  ColumnDefinitions="Auto,Auto">
+
+                <Button x:Name="ToggleMenuBtn"
+                        Style="{StaticResource ToggleMenuBtn}"
+                        Grid.Column="0"
+                        Text="☰"
+                        Clicked="ToggleMenuBtn_Clicked" />
+
+                <StackLayout x:Name="MenuPanel"
+                             Style="{StaticResource MenuPanel}"
+                             Grid.Column="1">
+                
+                    <Button Style="{StaticResource MenuBtn}" Text="실시간" Clicked="GoToPage_Clicked" />
+                    <Button Style="{StaticResource MenuBtn}" Text="기록확인" Clicked="GoToPage1_Clicked" />
+                    <Button Style="{StaticResource MenuBtn}" Text="현황분석" Clicked="GoToPage2_Clicked" />
+                </StackLayout>
+            </Grid>
+
+            <!-- 타이틀 -->
+            <Label Grid.Row="0"
+                   Style="{StaticResource TitleHeadline}"
+                   Text="Real-Time&#10;Monitoring"
+                   HorizontalOptions="Center"
+                   Margin="0,60,0,10" />
+
+            <!-- 실시간 영상 Placeholder      / 자리잡기 위한 코드 → 저장된 이미지로 사용했었음  
+            <StackLayout Grid.Row="1"
+                         Spacing="5"
+                         Padding="0"
+                         HorizontalOptions="Center">
+                <Image x:Name="VideoPlaceholder"
+                       Source="monitoring.png"
+                       HeightRequest="300"
+                       Aspect="AspectFit"
+                       BackgroundColor="#EEEEEE" />
+                <Label Text="※ 상단 프레임은 실시간 영상 위치를 잡기 위함 (임시 이미지)"
+                       FontSize="14"
+                       TextColor="#999999"
+                       HorizontalTextAlignment="Center" />
+            </StackLayout>
+            -->
+
+            <!-- 실시간 영상 Placeholder -->
+            <StackLayout Grid.Row="1"
+                         Spacing="5"
+                         Padding="0"
+                         HorizontalOptions="Center">
+
+                <Grid RowDefinitions="*,30,*,30"
+                      ColumnDefinitions="*,*"
+                      HorizontalOptions="Fill"
+                      VerticalOptions="Fill"
+                      HeightRequest="400"
+                      RowSpacing="2"
+                      ColumnSpacing="2">
+
+                    <!-- Video + info 1 -->
+                    <toolkit:MediaElement Grid.Row="0" Grid.Column="0"
+                                          x:Name="VideoPlayer1"
+                                          Aspect="AspectFit"
+                                          ShouldAutoPlay="True"
+                                          VerticalOptions="Center"
+                                          Source="" />
+
+                    <!-- Cam1 Labels (가로배치) -->
+                    <HorizontalStackLayout Grid.Row="1" Grid.Column="0"
+                                           Padding="5"
+                                           HorizontalOptions="Center"
+                                           Spacing="10">
+                        <Label Text="Cam1"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#222" />
+                        <Label Text="{Binding DetAnimal1}"
+                               FontSize="12"
+                               TextColor="#555" />
+                    </HorizontalStackLayout>
+
+                    <!-- Video + info 2 -->
+                    <toolkit:MediaElement Grid.Row="0" Grid.Column="1"
+                                          x:Name="VideoPlayer2"
+                                          Aspect="AspectFit"
+                                          ShouldAutoPlay="True"
+                                          VerticalOptions="Center"
+                                          Source="" />
+
+                    <!-- Cam1 Labels (가로배치) -->
+                    <HorizontalStackLayout Grid.Row="1" Grid.Column="1"
+                                           Padding="5"
+                                           HorizontalOptions="Center"
+                                           Spacing="10">
+                        <Label Text="Cam2"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#222" />
+                        <Label Text="{Binding DetAnimal2}"
+                               FontSize="12"
+                               TextColor="#555" />
+                    </HorizontalStackLayout>
+
+                    <!-- Video + info 3 -->
+                    <toolkit:MediaElement Grid.Row="2" Grid.Column="0"
+                                          x:Name="VideoPlayer3"
+                                          Aspect="AspectFit"
+                                          ShouldAutoPlay="True"
+                                          VerticalOptions="Center"
+                                          Source="" />
+
+                    <!-- Cam1 Labels (가로배치) -->
+                    <HorizontalStackLayout Grid.Row="3" Grid.Column="0"
+                                           Padding="5"
+                                           HorizontalOptions="Center"
+                                           Spacing="10">
+                        <Label Text="Cam3"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#222" />
+                        <Label Text="{Binding DetAnimal3}"
+                               FontSize="12"
+                               TextColor="#555" />
+                    </HorizontalStackLayout>
+
+                    <!-- Video + info 4 -->
+                    <toolkit:MediaElement Grid.Row="2" Grid.Column="1"
+                                          x:Name="VideoPlayer4"
+                                          Aspect="AspectFit"
+                                          ShouldAutoPlay="True"
+                                          VerticalOptions="Center"
+                                          Source="" />
+
+                    <!-- Cam1 Labels (가로배치) -->
+                    <HorizontalStackLayout Grid.Row="3" Grid.Column="1"
+                                           Padding="5"
+                                           HorizontalOptions="Center"
+                                           Spacing="10">
+                        <Label Text="Cam4"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#222" />
+                        <Label Text="{Binding DetAnimal4}"
+                               FontSize="12"
+                               TextColor="#555" />
+                    </HorizontalStackLayout>
+
+                </Grid>
+            </StackLayout>
+
+            <!-- Graph Placeholder -->
+            <Frame Grid.Row="3"
+                    BackgroundColor="White"
+                    CornerRadius="12"
+                    Padding="15"
+                    Margin="10,0,10,10"
+                    HorizontalOptions="Fill"
+                    HasShadow="False">
+
+                <charts:ChartView x:Name="minichart" HeightRequest="300" HorizontalOptions="Fill" VerticalOptions="Fill" />
+            </Frame>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

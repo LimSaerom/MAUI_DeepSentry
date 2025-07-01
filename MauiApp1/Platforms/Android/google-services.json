@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "649931891775",
+    "project_id": "deepsentry-39f58",
+    "storage_bucket": "deepsentry-39f58.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649931891775:android:cdaed08576703769d4c48a",
+        "android_client_info": {
+          "package_name": "com.companyname.mauiapp1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDVfkQGmkfQDT0DuAODrD9TuHFOMMyq8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

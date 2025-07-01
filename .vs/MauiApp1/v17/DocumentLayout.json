@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|c:\\users\\user15\\documents\\github\\deepsentry\\mauiapp1\\platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|c:\\users\\user15\\documents\\github\\deepsentry\\mauiapp1\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|c:\\users\\user15\\documents\\github\\deepsentry\\mauiapp1\\mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|c:\\users\\user15\\documents\\github\\deepsentry\\mauiapp1\\models\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\models\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|c:\\users\\user15\\documents\\github\\deepsentry\\mauiapp1\\monitoringpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\monitoringpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|c:\\users\\user15\\documents\\github\\deepsentry\\mauiapp1\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|c:\\users\\user15\\documents\\github\\deepsentry\\mauiapp1\\monitoringpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\monitoringpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|c:\\users\\user15\\documents\\github\\deepsentry\\mauiapp1\\graphpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22785892-7052-4CD5-9254-ED2B60CE1093}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\graphpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MauiApp1.csproj",
+              "DocumentMoniker": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\MauiApp1.csproj",
+              "RelativeDocumentMoniker": "MauiApp1\\MauiApp1.csproj",
+              "ToolTip": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\MauiApp1.csproj",
+              "RelativeToolTip": "MauiApp1\\MauiApp1.csproj",
+              "ViewState": "AgIAAEEAAAAAAAAAAADwv2oAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-26T14:17:14.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "MauiApp1\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "MauiApp1\\Platforms\\Android\\AndroidManifest.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-06-26T13:54:34.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\Platforms\\Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "MauiApp1\\Platforms\\Android\\MainActivity.cs",
+              "ToolTip": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\Platforms\\Android\\MainActivity.cs",
+              "RelativeToolTip": "MauiApp1\\Platforms\\Android\\MainActivity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T13:42:42.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\Models\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "MauiApp1\\Models\\DatabaseService.cs",
+              "ToolTip": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\Models\\DatabaseService.cs",
+              "RelativeToolTip": "MauiApp1\\Models\\DatabaseService.cs",
+              "ViewState": "AgIAAE4BAAAAAAAAAAAmwGkBAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:47:28.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MonitoringPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\MonitoringPage.xaml.cs",
+              "RelativeDocumentMoniker": "MauiApp1\\MonitoringPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\MonitoringPage.xaml.cs",
+              "RelativeToolTip": "MauiApp1\\MonitoringPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:15:20.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MonitoringPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\MonitoringPage.xaml",
+              "RelativeDocumentMoniker": "MauiApp1\\MonitoringPage.xaml",
+              "ToolTip": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\MonitoringPage.xaml",
+              "RelativeToolTip": "MauiApp1\\MonitoringPage.xaml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAEwEoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-23T01:56:05.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\MainPage.xaml.cs",
+              "RelativeToolTip": "MauiApp1\\MainPage.xaml.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAiwKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T09:50:40.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GraphPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\GraphPage.xaml.cs",
+              "RelativeDocumentMoniker": "MauiApp1\\GraphPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user15\\Documents\\GitHub\\DeepSentry\\MauiApp1\\GraphPage.xaml.cs",
+              "RelativeToolTip": "MauiApp1\\GraphPage.xaml.cs",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAUwPUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T09:38:41.639Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
