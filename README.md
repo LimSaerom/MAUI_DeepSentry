@@ -1,3 +1,33 @@
+# 📒 [Notion Page](https://www.notion.so/DogShelter-20b73547a88280e9a428d5b2226c4a02)
+
+⚙️ Dev Setup
+<details>
+✅ S/W_모바일 어플리케이션</br>
+⚙️ C#</br>
+⚙️ XAML</br>
+⚙️ Visual Studio 2022</br>
+⚙️ .NET MAUI(net 8.0)</br>
+⚙️ Microcharts(1.0.0)</br>
+⚙️ SkiaSharp(2.88.3)</br>
+⚙️ MediaElement(4.1.2)</br>
+</br>
+✅ S/W_Yolo 객체 인식</br>
+⚙️ VS Code</br>
+⚙️ YOLOv11</br>
+⚙️ Labelme2yolo</br>
+⚙️ OpenCV</br>
+⚙️ Scikit-learn</br>
+⚙️ 기타 : uuid, threading</br>
+</br>
+✅ DB</br>
+⚙️ Firebase_FireStore Database</br>
+⚙️ Firebase_Storage</br>
+</br>
+✅ OS / Tools</br>
+- Windows11</br>
+- Drow.io</br>
+</details>
+
 # DeepSentry
 
 ![image.png](Notion_Image/0.Mainimage.png)
@@ -5,38 +35,6 @@
 프로젝트 소개 : 
 이 시스템은 AI 객체 인식 기반의 YOLO 모델을 활용하여 유해야생동물을 실시간으로 탐지하고 대응하는 기술을 제공합니다. YOLO로 탐지된 정보를 시각화하고 실시간 경고를 제공하는 모바일 애플리케이션을 직접 개발하여, 사용자가 현장 상황을 즉각적으로 파악하고 신속하게 대응할 수 있도록 지원했습니다. 이를 통해 농작물 피해를 최소화하고, 효율적인 관리 및 경고 서비스를 제공함으로써 농업 현장의 안전성과 생산성을 높이는 것이 본 프로젝트의 핵심 목표입니다.
 
-### ✅ S/W_모바일 어플리케이션
-
-- `C#`
-- `XAML`
-- `Visual Studio 2022`
-- `.NET MAUI(net 8.0)`
-- `Microcharts(1.0.0)`
-- `SkiaSharp(2.88.3)`
-- `MediaElement(4.1.2)`
-
-### ✅ S/W_Yolo 객체 인식
-
-- `VS Code`
-- `YOLOv11`
-- `Labelme2yolo`
-- `OpenCV`
-- `Scikit-learn`
-- `기타 : uuid, threading`
-
----
-
-### ✅ DB
-
-- `Firebase_FireStore Database`
-- `Firebase_Storage`
-
-### ✅ OS / Tools
-
-- `Windows11`
-- `Drow.io`
-
----
 
 ### **기술 선정 이유**
 ✅ YOLOv11 (Python)
@@ -192,14 +190,14 @@
     Package 버전 설정 : MAUI net 8.0 환경과 호환되는 Package 버전 탐색
     
     1. SkiaSharp [SKCanvasView] 사용시 Android 스타일 리소스가 추가되어야하며, 종종 누락되는 오류 발생 → 패키지 설치를 확인하거나 누락방지 설정을 수기로 추가해주어야함
-    
-    ```xml
+    ```
+    xml
     <PropertyGroup>
       <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
       <AndroidEnableSkiasharpSupport>true</AndroidEnableSkiasharpSupport> <!-- 이 줄 추가 -->
     </PropertyGroup>
-    
     ```
+    
     
     1. 오류 지속되어 SkiaSharp 관련 패키지 전체 삭제 후 최신 안정버전(3.119.0) 설치
     2. MicroChart와 호환하려면 SkiaSharp(2.88.3)을 사용해야함. **(Chart 패키지끼리의 충돌)**
@@ -217,19 +215,3 @@
     3. 잘못된 필드 토큰여부 확인
     4. Platforms/Android/Resources/values/attrs.xml 파일에 접근하여 리소스 직접 추가
 </details>
-
-### **프로젝트 성과**
-
-- 실시간 객체 인식 시스템 기획 및 크로스플랫폼 앱(.NET MAUI)으로 구현
-- YOLO 탐지 결과 시각화
-- SQLite → Firebase 전환을 포함한 2종 DB 설계 및 실시간 동기화 시스템 구축
-- 외부 패키지(Microcharts, SkiaSharp) 버전 충돌 해결을 통한 앱 안정성 확보
-- 앱 전체 UI/UX 흐름 설계 및 기능 중심의 스토리보드·화면 목업 제작
-
-### **프로젝트 리뷰(회고)**
-
-이번 프로젝트는 모바일 어플리케이션 개발을 처음 경험해보며, 단순히 기능을 구현하는 것을 넘어 **UI/UX 설계, 사용자 흐름, 시각적 완성도**까지 고려해야 한다는 점에서 많은 고민과 배움을 얻을 수 있었습니다. 특히 크로스 플랫폼 프레임워크인 .NET MAUI는 자료가 많지 않아 **패키지 설정, 버전 충돌, 리소스 오류** 등 환경 구축 단계에서 많은 어려움이 있었고, 이를 해결하는 데 가장 많은 시간을 소요했습니다. 이 경험을 통해 **기술 선택 시 단순한 기능 구현 여부뿐 아니라, 안정성·자료 접근성·호환성 등을 종합적으로 고려해야 한다**는 중요한 교훈을 얻었습니다.
-
-또한, 프로젝트 진행 도중 SQLite에서 Firebase로 DB 구조를 변경하는 과정에서 **기술 도입이 미치는 전체 시스템 설계 영향**을 실감했고, 초기 설계 단계의 중요성을 다시 한번 체감했습니다. YOLOv11과 모바일 앱 연동 과정에서도 **다양한 기술 스택 간의 데이터 흐름과 포맷 차이**를 이해하고 조율하는 데 많은 학습이 필요했습니다. 이 과정은 향후 더 복잡한 시스템을 설계하거나 협업할 때 기반이 될 수 있는 소중한 경험이었습니다.
-
-무엇보다, 2인 팀 프로젝트로 진행되며 **서로 다른 역할을 수행하는 구성원 간의 의사소통의 중요성**을 절실히 느꼈습니다. 기술적인 이해를 서로 공유하고, 문제 상황에서 빠르게 소통하며 함께 방향을 정하는 과정 자체가 협업의 핵심이라는 걸 깨달았습니다.
